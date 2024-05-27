@@ -7,7 +7,8 @@ import { catchError } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class MeasurementService {
-  private apiUrl = '/api/latest-measurement/station=ANT001BE';
+  private apiUrl =
+    'http://api.derooverit.com/latest-measurement/station=ANT001BE';
 
   constructor(private http: HttpClient) {}
 
