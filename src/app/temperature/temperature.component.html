@@ -8,10 +8,6 @@
       [size]="screenWidth / 5"
     />
   </p-card>
-  <p>Humidity: {{ latestMeasurement.humidity }}</p>
-  <p-knob [(ngModel)]="latestMeasurement.temperature" [readonly]="true" />
-  <p>Moisture: {{ latestMeasurement.moisture }}</p>
-  <p-knob [(ngModel)]="latestMeasurement.temperature" [readonly]="true" />
   <p>Station ID: {{ latestMeasurement.Station_idStation }}</p>
 </div>
 <ng-template #loading>
