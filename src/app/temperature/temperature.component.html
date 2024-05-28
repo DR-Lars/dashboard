@@ -1,12 +1,13 @@
 <div *ngIf="latestMeasurement | async as latestMeasurement; else loading">
   <h2>Latest Measurement</h2>
   <p>Time: {{ latestMeasurement.timeStamp }}</p>
-  <p>Temperature:</p>
-  <p-knob
-    [(ngModel)]="latestMeasurement.temperature"
-    [readonly]="true"
-    [size]="300"
-  />
+  <p-card header="Temperature" [style]="{ width: '25%' }">
+    <p-knob
+      [(ngModel)]="latestMeasurement.temperature"
+      [readonly]="true"
+      [size]="screenWidth / 5"
+    />
+  </p-card>
   <p>Humidity: {{ latestMeasurement.humidity }}</p>
   <p-knob [(ngModel)]="latestMeasurement.temperature" [readonly]="true" />
   <p>Moisture: {{ latestMeasurement.moisture }}</p>
