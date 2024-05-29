@@ -1,10 +1,15 @@
 .parent {
   display: grid;
-  grid-template-columns: 18% 18% 18% 46%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
 .child {
-  margin: 1.5%;
+  margin: 2%;
+}
+
+#map {
+  grid-column: 4 / 6;
+  grid-row: 0 / 3;
 }
 
 body {

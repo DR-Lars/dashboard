@@ -10,9 +10,10 @@ import { KnobModule } from 'primeng/knob';
 import { CardModule } from 'primeng/card';
 import { HumidityComponent } from './humidity/humidity.component';
 import { MoistureComponent } from './moisture/moisture.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
-  declarations: [AppComponent, TemperatureComponent, HumidityComponent, MoistureComponent],
+  declarations: [AppComponent, TemperatureComponent, HumidityComponent, MoistureComponent, MapComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
