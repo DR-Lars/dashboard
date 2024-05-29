@@ -1,7 +1,7 @@
 <div *ngIf="latestMeasurement | async as latestMeasurement; else loading">
-  <p-card header="Temperature">
+  <p-card header="Humidity">
     <p-knob
-      [(ngModel)]="latestMeasurement.temperature"
+      [(ngModel)]="latestMeasurement.humidity"
       [readonly]="true"
       [size]="screenWidth / 5"
     />

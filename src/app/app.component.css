@@ -1,0 +1,8 @@
+.parent {
+  display: flex;
+}
+
+.child {
+  margin: 1%;
+  width: 15%;
+}
