@@ -1,12 +1,12 @@
-<div *ngIf="latestMeasurement | async as latestMeasurement; else loading">
-  <p-card header="Temperature">
+<p-card header="Temperature"
+  ><div *ngIf="latestMeasurement | async as latestMeasurement; else loading">
     <p-knob
       [(ngModel)]="latestMeasurement.temperature"
       [readonly]="true"
       [size]="screenWidth / 5"
     />
-  </p-card>
-</div>
+  </div>
+</p-card>
 <ng-template #loading>
   <p>Loading...</p>
 </ng-template>
