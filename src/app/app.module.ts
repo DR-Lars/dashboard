@@ -11,9 +11,10 @@ import { CardModule } from 'primeng/card';
 import { HumidityComponent } from './humidity/humidity.component';
 import { MoistureComponent } from './moisture/moisture.component';
 import { MapComponent } from './map/map.component';
+import { AdditionalComponent } from './additional/additional.component';
 
 @NgModule({
-  declarations: [AppComponent, TemperatureComponent, HumidityComponent, MoistureComponent, MapComponent],
+  declarations: [AppComponent, TemperatureComponent, HumidityComponent, MoistureComponent, MapComponent, AdditionalComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
