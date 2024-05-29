@@ -1,10 +1,10 @@
 .parent {
-  display: flex;
+  display: grid;
+  grid-template-columns: 18% 18% 18% 46%;
 }
 
 .child {
-  margin: 1%;
-  width: 15%;
+  margin: 1.5%;
 }
 
 body {
