@@ -1,0 +1,12 @@
+<p-card header="Moisture"
+  ><div *ngIf="latestMeasurement | async as latestMeasurement; else loading">
+    <p-knob
+      [(ngModel)]="latestMeasurement.moisture"
+      [readonly]="true"
+      [size]="screenWidth / 5"
+    />
+  </div>
+</p-card>
+<ng-template #loading>
+  <p>Loading...</p>
+</ng-template>
