@@ -8,9 +8,7 @@ body {
 #item4,
 #item5,
 #item6 {
-  margin: 0.5vw;
-  padding-bottom: 1vh;
-  background-color: brown;
+  margin: 0.25vw;
 }
 #item1 {
   grid-area: item1;
@@ -34,7 +32,8 @@ body {
 .parent {
   display: grid;
   height: 98vh;
-  background-color: aqua;
+  width: 97vw;
+  gap: 1vh;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 50% 50%;
   grid-template-areas:
