@@ -1,1 +1,31 @@
-<p>additional works!</p>
+<p-card header="Additional"
+  ><div *ngIf="latestMeasurement | async as latestMeasurement; else loading">
+    <div class="row">
+      <p>Particles 1:</p>
+      <p-badge [value]="latestMeasurement.particle_size1" />
+    </div>
+    <div class="row">
+      <p>Particles 2.5:</p>
+      <p-badge [value]="latestMeasurement.particle_size2d5" />
+    </div>
+    <div class="row">
+      <p>Particles 4:</p>
+      <p-badge [value]="latestMeasurement.particle_size4" />
+    </div>
+    <div class="row">
+      <p>Particles 10:</p>
+      <p-badge [value]="latestMeasurement.particle_size10" />
+    </div>
+    <div class="row">
+      <p>Natural compounds:</p>
+      <p-badge [value]="latestMeasurement.organic_compounds" />
+    </div>
+    <div class="row">
+      <p>NOX:</p>
+      <p-badge [value]="latestMeasurement.nitrogen" />
+    </div>
+  </div>
+</p-card>
+<ng-template #loading>
+  <p>Loading...</p>
+</ng-template>

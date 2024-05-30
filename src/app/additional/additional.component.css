@@ -1,0 +1,9 @@
+div.row {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  margin-bottom: -20px;
+}
+
+p-card {
+  height: 100%;
+}
