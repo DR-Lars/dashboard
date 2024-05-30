@@ -1,6 +1,17 @@
 <p-card header="Forecast"
-  ><div *ngIf="openWeatherService | async as openWeatherService; else loading">
-    <p-badge [value]="openWeatherService.list[0].main.temp"></p-badge>
+  ><div
+    class="forecast"
+    *ngIf="openWeatherService | async as openWeatherService; else loading"
+  >
+    <ng-container *ngFor="let day of openWeatherService.list">
+      <div *ngIf="day.dt_txt.includes('15:00')">
+        <p>
+          {{ formatDate(day.dt_txt) }}
+        </p>
+        <img [src]="getImage(day.weather[0].icon)" alt="weather icon" />
+        <p>{{ roundNumber(day.main.temp) }}°C</p>
+      </div>
+    </ng-container>
   </div>
 </p-card>
 <ng-template #loading>

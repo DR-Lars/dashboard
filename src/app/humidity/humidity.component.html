@@ -1,7 +1,7 @@
 <p-card header="Humidity"
   ><div *ngIf="latestMeasurement | async as latestMeasurement; else loading">
     <p-knob
-      [(ngModel)]="latestMeasurement.humidity"
+      [ngModel]="roundNumber(latestMeasurement.humidity)"
       valueTemplate="{value}%"
       [readonly]="true"
       [size]="screenWidth / 5"

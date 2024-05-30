@@ -11,8 +11,14 @@ export class HumidityComponent {
   latestMeasurement!: Observable<any>;
   screenHeight!: number;
   screenWidth!: number;
+  humidity!: number;
 
   constructor(private MeasurementService: MeasurementService) {}
+
+  roundNumber(num: number): number {
+    num = Math.round(num * 10) / 10;
+    return num;
+  }
 
   ngOnInit(): void {
     this.latestMeasurement = this.MeasurementService.getLatestMeasurement();

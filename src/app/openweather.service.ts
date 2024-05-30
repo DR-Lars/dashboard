@@ -8,7 +8,7 @@ import { catchError } from 'rxjs/operators';
 })
 export class OpenweatherService {
   private apiUrl =
-    'http://api.openweathermap.org/data/2.5/forecast?lat=35.513828&lon=24.018038&appid=19470ea5bd3d3a5c3b01cdbc1621fe8e';
+    'http://api.openweathermap.org/data/2.5/forecast?lat=35.513828&lon=24.018038&appid=19470ea5bd3d3a5c3b01cdbc1621fe8e&units=metric';
 
   constructor(private http: HttpClient) {}
 

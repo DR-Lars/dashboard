@@ -1,0 +1,17 @@
+div.forecast {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 3;
+  justify-items: center;
+  align-items: center;
+}
+
+div.forecast > div {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+div.forecast > div > img {
+  margin: -3vh;
+}
