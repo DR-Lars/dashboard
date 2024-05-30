@@ -1,7 +1,7 @@
 <p-card header="Forecast"
-  ><div
-    *ngIf="latestMeasurement | async as latestMeasurement; else loading"
-  ></div>
+  ><div *ngIf="openWeatherService | async as openWeatherService; else loading">
+    <p-badge [value]="openWeatherService.list[0].main.temp"></p-badge>
+  </div>
 </p-card>
 <ng-template #loading>
   <p>Loading...</p>

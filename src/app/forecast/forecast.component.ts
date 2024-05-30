@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { MeasurementService } from '../measurement.service';
 import { Observable } from 'rxjs';
+import { OpenweatherService } from '../openweather.service';
 
 @Component({
   selector: 'app-forecast',
@@ -8,14 +8,14 @@ import { Observable } from 'rxjs';
   styleUrls: ['./forecast.component.css'],
 })
 export class ForecastComponent {
-  latestMeasurement!: Observable<any>;
+  openWeatherService!: Observable<any>;
   screenHeight!: number;
   screenWidth!: number;
 
-  constructor(private MeasurementService: MeasurementService) {}
+  constructor(private OpenWeatherService: OpenweatherService) {}
 
   ngOnInit(): void {
-    this.latestMeasurement = this.MeasurementService.getLatestMeasurement();
+    this.openWeatherService = this.OpenWeatherService.getForecast();
   }
 
   @HostListener('window:resize', ['$event'])
