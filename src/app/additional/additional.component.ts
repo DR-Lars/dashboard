@@ -24,3 +24,4 @@ export class AdditionalComponent {
     this.screenWidth = window.innerWidth;
   }
 }
+
