@@ -14,6 +14,7 @@ import { MoistureComponent } from './moisture/moisture.component';
 import { MapComponent } from './map/map.component';
 import { AdditionalComponent } from './additional/additional.component';
 import { BadgeModule } from 'primeng/badge';
+import { ForecastComponent } from './forecast/forecast.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BadgeModule } from 'primeng/badge';
     MoistureComponent,
     MapComponent,
     AdditionalComponent,
+    ForecastComponent,
   ],
   imports: [
     BrowserModule,
