@@ -1,17 +1,43 @@
-.parent {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-}
-
-.child {
-  margin: 2%;
-}
-
-#map {
-  grid-column: 4 / 6;
-  grid-row: 0 / 3;
-}
-
 body {
   background-color: aliceblue;
+}
+
+#item1,
+#item2,
+#item3,
+#item4,
+#item5,
+#item6 {
+  margin: 0.5vw;
+  padding-bottom: 1vh;
+  background-color: brown;
+}
+#item1 {
+  grid-area: item1;
+}
+#item2 {
+  grid-area: item2;
+}
+#item3 {
+  grid-area: item3;
+}
+#item4 {
+  grid-area: item4;
+}
+#item5 {
+  grid-area: item5;
+}
+#item6 {
+  grid-area: item6;
+}
+
+.parent {
+  display: grid;
+  height: 98vh;
+  background-color: aqua;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "item1 item2 item3 item4 item4"
+    "item5 item6 item6 item4 item4";
 }

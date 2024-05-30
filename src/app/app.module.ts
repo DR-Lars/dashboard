@@ -8,13 +8,22 @@ import { AppComponent } from './app.component';
 import { TemperatureComponent } from './temperature/temperature.component';
 import { KnobModule } from 'primeng/knob';
 import { CardModule } from 'primeng/card';
+import { ProgressBarModule } from 'primeng/progressbar';
 import { HumidityComponent } from './humidity/humidity.component';
 import { MoistureComponent } from './moisture/moisture.component';
 import { MapComponent } from './map/map.component';
 import { AdditionalComponent } from './additional/additional.component';
+import { BadgeModule } from 'primeng/badge';
 
 @NgModule({
-  declarations: [AppComponent, TemperatureComponent, HumidityComponent, MoistureComponent, MapComponent, AdditionalComponent],
+  declarations: [
+    AppComponent,
+    TemperatureComponent,
+    HumidityComponent,
+    MoistureComponent,
+    MapComponent,
+    AdditionalComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -22,6 +31,8 @@ import { AdditionalComponent } from './additional/additional.component';
     FormsModule,
     KnobModule,
     CardModule,
+    ProgressBarModule,
+    BadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
